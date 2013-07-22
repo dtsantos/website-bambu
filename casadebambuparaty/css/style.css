@@ -25,7 +25,12 @@ header, footer, .container, .lista-fotos, .texto-fotos-quartos{
 
 .container img{
 	float: left;
-	padding-right: 20px;
+	margin-right: 20px;
+}
+
+.container img, .container-contato img, .images-aligned p img, #img-lancha img {
+	border: solid black 1px;
+	padding: 2px;
 }
 
 .container h1, h2{
@@ -111,8 +116,6 @@ header, footer, .container, .lista-fotos, .texto-fotos-quartos{
 	margin-right: 20px;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	border: solid;
-	border-width: 3px;
 }
 
 #img-lancha img{
