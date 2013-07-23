@@ -18,7 +18,7 @@ header, footer, .container, .lista-fotos, .texto-fotos-quartos{
 	background-color: #CCC49F;
 	height: auto;
 	padding: 10px;
-	font-size: 12;
+	font-size: 13;
 	line-height: 18px;
 	float:right;
 }
@@ -47,11 +47,9 @@ header, footer, .container, .lista-fotos, .texto-fotos-quartos{
 	background-color: #CCC49F;
 	height: auto;
 	padding: 10px;
-	font-size: 12;
+	font-size: 13;
 	line-height: 18px;
 	text-align: center;
-	font-size: 12;
-
 }
 
 .container-contato img{
@@ -69,7 +67,7 @@ header, footer, .container, .lista-fotos, .texto-fotos-quartos{
 	height: auto;
 	padding-left: 125px;
 	padding-right: 125px;
-	font-size: 12;
+	font-size: 13;
 	line-height: 18px;	
 }
 
@@ -88,7 +86,7 @@ header, footer, .container, .lista-fotos, .texto-fotos-quartos{
 	height: auto;
 	padding-left: 125px;
 	padding-right: 125px;
-	font-size: 12;
+	font-size: 13;
 	line-height: 18px;
 }
 
