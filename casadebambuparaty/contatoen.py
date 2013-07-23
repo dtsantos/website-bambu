@@ -13,7 +13,7 @@ class MainPageEn(webapp2.RequestHandler):
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
-	<meta charset="utf8" content="text/html" />
+	<meta charset="UTF-8" content="text/html" />
   	<meta name="description" content="Hosting for couples or groups in Paraty in an environment surrounded by a garden filled with Atlantic Forest species at a bambu made house. We are a local family and will help you with tips of what to do and much more! Great prices!" />
   	<meta name="keywords" content="paraty, hosting, hotel, pousada, cheap, house, bambu, groups, trips, local, carnaval, new year, boat" />
 
@@ -133,7 +133,7 @@ class ConfirmacaoEn(webapp2.RequestHandler):
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
-	<meta charset="utf8" content="text/html" />
+	<meta charset="UTF-8" content="text/html" />
   	<meta name="description" content="Hosting for couples or groups in Paraty in an environment surrounded by a garden filled with Atlantic Forest species at a bambu made house. We are a local family and will help you with tips of what to do and much more! Great prices!" />
   	<meta name="keywords" content="paraty, hosting, hotel, pousada, cheap, house, bambu, groups, trips, local, carnaval, new year, boat" />
 
