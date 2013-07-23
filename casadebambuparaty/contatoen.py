@@ -7,7 +7,11 @@ class MainPageEn(webapp2.RequestHandler):
   def get(self):
       self.response.out.write("""
 
-<html>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
 	<meta charset="utf8" content="text/html" />
   	<meta name="description" content="Hosting for couples or groups in Paraty in an environment surrounded by a garden filled with Atlantic Forest species at a bambu made house. We are a local family and will help you with tips of what to do and much more! Great prices!" />
@@ -15,19 +19,14 @@ class MainPageEn(webapp2.RequestHandler):
 
 	<title>Bambu House Paraty - Contact Page</title>
 
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css" />
-    <script type="text/javascript">
-
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-38332351-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
+    <script>
+            var _gaq=[['_setAccount','UA-38332351-1'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
     </script>
 </head>
 <body>
@@ -35,7 +34,7 @@ class MainPageEn(webapp2.RequestHandler):
 		<header>
 			<img src="img/head.jpg" alt="Header Bambu" width="960" height="100" />
 			<div class="wifi">
-				<img src="img/wifi.gif" alt="We offer Wi-Fi Internet" />
+				<img src="img/wifi.gif" width="60" height="24" alt="We offer Wi-Fi Internet" />
 			</div>
 			<div class="opcoes">
 				<ul>
@@ -50,7 +49,7 @@ class MainPageEn(webapp2.RequestHandler):
 				<ul>
 					<li>
 						<a href="contato.html">
-							<img src="img/flag_pt.gif" alt="Versao em Portugues" />
+							<img src="img/flag_pt.gif" width="26" height="18" alt="Versao em Portugues" />
 						</a>
 					</li>
 				</ul>
@@ -128,26 +127,26 @@ class ConfirmacaoEn(webapp2.RequestHandler):
 	
 	self.response.out.write("""
 
-<html>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
 	<meta charset="utf8" content="text/html" />
   	<meta name="description" content="Hosting for couples or groups in Paraty in an environment surrounded by a garden filled with Atlantic Forest species at a bambu made house. We are a local family and will help you with tips of what to do and much more! Great prices!" />
   	<meta name="keywords" content="paraty, hosting, hotel, pousada, cheap, house, bambu, groups, trips, local, carnaval, new year, boat" />
 
 	<title>Bambu House Paraty - Contact Page</title>
+
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css" />
-    <script type="text/javascript">
-
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-38332351-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
+    <script>
+            var _gaq=[['_setAccount','UA-38332351-1'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
     </script>
 </head>
 
@@ -156,7 +155,7 @@ class ConfirmacaoEn(webapp2.RequestHandler):
 		<header>
 			<img src="img/head.jpg" alt="Header Bambu" width="960" height="100" />
 			<div class="wifi">
-				<img src="img/wifi.gif" alt="We offer Wi-Fi Internet" />
+				<img src="img/wifi.gif" width="60" height="24" alt="We offer Wi-Fi Internet" />
 			</div>
 			<div class="opcoes">
 				<ul>
@@ -171,7 +170,7 @@ class ConfirmacaoEn(webapp2.RequestHandler):
 				<ul>
 					<li>
 						<a href="contato.html">
-							<img src="img/flag_pt.gif" alt="Versao em Portugues" />
+							<img src="img/flag_pt.gif" width="26" height="18" alt="Versao em Portugues" />
 						</a>
 					</li>
 				</ul>

@@ -1,9 +1,22 @@
 body {
 	background-color: #F2E8BD;
-	font-family: sans-serif;
+	font-family: "Arial", sans-serif;
 	margin: 0;
-	font-size: 15;
+	font-size: 11pt;
 }
+
+h1, h2 {
+	text-align: center;
+	line-height: 10px;
+	margin-top: 13px;
+}
+
+h1 { 
+	font-size: 22pt;
+	padding: 10px;
+}
+
+h2 { font-size: 12pt; }
 
 header, footer, .container, .lista-fotos, .texto-fotos-quartos{
 	overflow: hidden;
@@ -17,15 +30,13 @@ header, footer, .container, .lista-fotos, .texto-fotos-quartos{
 .container {
 	background-color: #CCC49F;
 	height: auto;
-	padding: 10px;
-	font-size: 13;
 	line-height: 18px;
-	float:right;
 }
 
 .container img{
 	float: left;
 	margin-right: 20px;
+	margin-left: 15px;
 }
 
 .container img, .container-contato img, .images-aligned p img, #img-lancha img {
@@ -33,21 +44,10 @@ header, footer, .container, .lista-fotos, .texto-fotos-quartos{
 	padding: 2px;
 }
 
-.container h1, h2{
-	text-align: center;
-	line-height: 10px;
-	margin-top: 13px;
-}
-
-.container h2, .container-contato h2{
-	font-size: 17;
-}
-
 .container-contato {
 	background-color: #CCC49F;
 	height: auto;
 	padding: 10px;
-	font-size: 13;
 	line-height: 18px;
 	text-align: center;
 }
@@ -56,48 +56,12 @@ header, footer, .container, .lista-fotos, .texto-fotos-quartos{
 	padding-right: 20px;
 }
 
-.container-contato h1, h2{
-	text-align: center;
-	line-height: 10px;
-	margin-top: 13px;
-}
-
 .lista-fotos {
 	background-color: #CCC49F;
 	height: auto;
 	padding-left: 125px;
 	padding-right: 125px;
-	font-size: 13;
 	line-height: 18px;	
-}
-
-.lista-fotos h1, h2{
-	text-align: center;
-	line-height: 10px;
-	margin-top: 13px;
-}
-
-.lista-fotos h2 {
-	font-size: 17;
-}
-
-.texto-fotos-quartos {
-	background-color: #CCC49F;
-	height: auto;
-	padding-left: 125px;
-	padding-right: 125px;
-	font-size: 13;
-	line-height: 18px;
-}
-
-.texto-fotos-quartos h1, h2{
-	text-align: center;
-	line-height: 10px;
-	margin-top: 13px;
-}
-
-.texto-fotos-quartos h2 {
-	font-size: 17;
 }
 
 #centered-text {
@@ -130,6 +94,7 @@ header, footer{
 header {
 	background: #C07D41;
 	text-shadow: 0 1px 0px grey;
+	font-size: 12pt;
 }
 
 .opcoes {
@@ -185,7 +150,5 @@ header {
 
 footer {
 	background: #ADB96E;
-	font-size: 15px;
 	line-height: 2px;
-	float: left;
 }
