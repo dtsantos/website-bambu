@@ -22,6 +22,7 @@ class MainPageEn(webapp2.RequestHandler):
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/script.js"></script>
     <script>
             var _gaq=[['_setAccount','UA-38332351-1'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
@@ -32,7 +33,7 @@ class MainPageEn(webapp2.RequestHandler):
 <body>
 	<div class="wrap">
 		<header>
-			<img src="img/head.jpg" alt="Header Bambu" width="960" height="100" />
+			<img src="img/head.jpg" alt="Header Bambu" width="960" height="50" />
 			<div class="wifi">
 				<img src="img/wifi.gif" width="60" height="24" alt="We offer Wi-Fi Internet" />
 			</div>
@@ -59,9 +60,15 @@ class MainPageEn(webapp2.RequestHandler):
 		<div class="container-contato">
 			<h1>Bambu House</h1>
 			<h2>Contact</h2>
-
-			<div id="#centered-text">
-				<p>Please fill in the form and we will get in touch with you soon:</p>
+			<p>
+				Get in touch with us through phone (+55 24):
+			</p>
+			<p>
+					3371-0365 Fixo | 9975-7859 Vivo | 8130-2503 TIM |
+					9204-6039 Claro | 8835-5643 OI
+				</p>
+			<div class="simple-images">
+				<p>Or fill in the form and we will get in touch with you soon:</p>
 			</div>
 			
 			<form action="/confirmacao.en.html" method="post">
@@ -84,7 +91,7 @@ class MainPageEn(webapp2.RequestHandler):
   				<tr>  
 				  <td align="left"><label for="usr">Message:</label>&nbsp;
 				  </td>
-  				  <td><textarea name="msg" rows="8" cols="40"></textarea></td>
+  				  <td><textarea id="mensagem"name="msg" rows="8" cols="40"></textarea></td>
   				
 				  <td></td> 
 			 	</tr>
@@ -95,6 +102,9 @@ class MainPageEn(webapp2.RequestHandler):
 			 	</tr>
 				</table>
     		</form>
+			<!-- Checking if an email was typed -->
+			<script>prepareEventHandlers("Please fill in the e-mail and message fields");</script>
+			<p><span id="errorMessage"></span></p>
     		<p>Our house is situated parallel to BR 101, at point A, according to the map bellow</p>
 				<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=d&amp;source=s_d&amp;saddr=-23.226124,-44.727491&amp;daddr=&amp;hl=en&amp;geocode=&amp;sll=-23.221904,-44.721565&amp;sspn=0.016446,0.028882&amp;mra=mift&amp;mrsp=0&amp;sz=16&amp;ie=UTF8&amp;ll=-23.221904,-44.721565&amp;spn=0.016446,0.028882&amp;t=m&amp;output=embed">
 				</iframe>
@@ -107,7 +117,7 @@ class MainPageEn(webapp2.RequestHandler):
 		</div>
 				
 		<footer>
-			<img src="img/foot.jpg" alt="Footer Bambu" width="480" height="100"><img src="img/foot.jpg" alt="Footer Casa de Bambu" width="480" height="100">
+			<img src="img/foot.jpg" alt="Footer Bambu" width="480" height="50"><img src="img/foot.jpg" alt="Footer Casa de Bambu" width="480" height="50">
 			<p>Hospedaria Casa de Bambu - Rua B, Vila D. Pedro I - Paraty - RJ - Brasil </p>
 			<p>fpnsantos@gmail.com - +55 (24) 3371-0365 </p>
 		</footer>
@@ -153,7 +163,7 @@ class ConfirmacaoEn(webapp2.RequestHandler):
 <body>
 	<div class="wrap">
 		<header>
-			<img src="img/head.jpg" alt="Header Bambu" width="960" height="100" />
+			<img src="img/head.jpg" alt="Header Bambu" width="960" height="50" />
 			<div class="wifi">
 				<img src="img/wifi.gif" width="60" height="24" alt="We offer Wi-Fi Internet" />
 			</div>
@@ -181,7 +191,14 @@ class ConfirmacaoEn(webapp2.RequestHandler):
 		<div class="container-contato">
 			<h1>Message sent!</h1>
 
-			<div id="#centered-text">
+			<div class="simple-images">
+			<p>
+				Get in touch with us through phone (+55 24):
+			</p>
+			<p>
+					3371-0365 Fixo | 9975-7859 Vivo | 8130-2503 TIM |
+					9204-6039 Claro | 8835-5643 OI
+				</p>
 				<p>Thank you for your message! We will answer your enquire in maximum 24 hours.</p>
 				<p>This is our address:
 				<p>Hospedaria Casa de Bambu</p>
@@ -199,7 +216,7 @@ class ConfirmacaoEn(webapp2.RequestHandler):
 		</div>
 		
 		<footer>
-			<img src="img/foot.jpg" alt="Footer Bambu" width="480" height="100"><img src="img/foot.jpg" alt="Footer Casa de Bambu" width="480" height="100">
+			<img src="img/foot.jpg" alt="Footer Bambu" width="480" height="50"><img src="img/foot.jpg" alt="Footer Casa de Bambu" width="480" height="50">
 			<p>Hospedaria Casa de Bambu - Rua B, Vila D. Pedro I - Paraty - RJ - Brasil </p>
 			<p>fpnsantos@gmail.com - +55 (24) 3371-0365 </p>
 		</footer>

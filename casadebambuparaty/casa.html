@@ -4,7 +4,7 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
-	<meta charset="UTF-8" content="text/html" />
+	<meta charset="UTF-8" />
   	<meta name="description" content="Hospedagem para casais ou grupos na cidade de Paraty em um ambiente cercado de um jardim com especies da mata atlântica em uma casa feita de Bambu. Somos uma família local e também ajudamos com dicas de passeios e muito mais! Ótimos preços!" />
   	<meta name="keywords" content="paraty, hospedagem, hotel, pousada, barata, casa, bambu, grupos, passeios, local, carnaval, reveillon, passeio, barco" />
 
@@ -13,6 +13,11 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css" />
+	<link href="css/lightbox.css" rel="stylesheet" />
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/lightbox-2.6.min.js"></script>
+	
     <script>
             var _gaq=[['_setAccount','UA-38332351-1'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
@@ -23,16 +28,17 @@
 <body>
 	<div class="wrap">
 		<header>
-			<img src="img/head.jpg" alt="Header Bambu" width="960" height="100" />
+			<img src="img/head.jpg" alt="Header Bambu" width="960" height="50" />
 			<div class="wifi">
 				<img src="img/wifi.gif" width="60" height="24" alt="Disponibilizamos Internet Wi-Fi" />
 			</div>
 			<div class="opcoes">
 				<ul>
-					<li><a href="index.html">Início</a></li>
-					<li><a href="casa.html">Casa</a></li>
-					<li><a href="quartos.html">Quartos</a></li>
-					<li><a href="contato.html">Contato</a></li>
+					<li><a href="index.html">início</a></li>
+					<li><a href="casa.html">casa</a></li>
+					<li><a href="quartos.html">quartos</a></li>
+					<li><a href="faq.html">faq</a></li>
+					<li><a href="contato.html">contato</a></li>
 				</ul>
 			</div> 
 
@@ -52,25 +58,39 @@
 			<h2>Algumas fotos e informações</h2>
 			
 			<p>O salão possui um vão livre de 12 metros de comprimento por 5 metros de altura, nele há uma extensa mesa de madeira própria para confraternizações, uma TV de 29', aparelho DVD e internet wireless.</p>
-            <p>Na cozinha com vista para o jardim disponibilizamos geladeira, fogão, liquidificador, microondas e todos utensílios necessários para um jantar elaborado ou aquele rápido lanchinho.<p/>
-            <p>O acesso é pemitido desde que se mantenha o local limpo e organizado. O supermercado se encontra apenas  500m de distância.<p/>
-            <p>Sinta-se em casa!<p/>
-            <p>Abaixo algumas fotos do nosso espaço.</p>
+            <p>Na cozinha com vista para o jardim disponibilizamos geladeira, fogão, liquidificador, microondas e todos utensílios necessários para um jantar elaborado ou aquele rápido lanchinho.</p>
+            <p>O acesso é pemitido desde que se mantenha o local limpo e organizado. O supermercado se encontra apenas  500m de distância.</p>
+            <p>Sinta-se em casa!</p>
+			<p>Clique em uma das miniaturas abaixo para abrir a galeria de fotos.</p>
 
-	      	<p id="img-lancha"><img src="img/casa-salao.jpg" width="560" height="373" /></p>
-      		<p id="centered-text">Venha desfrutar de nosso espaço</p>
-		    <p id="img-lancha"><img src="img/area-de-tv.jpg" width="560" height="373" /></p>
-		    <p id="centered-text">Salão com área de TV</p>
-		    <p id="img-lancha"><img src="img/area-externa-redes.jpg" width="560" height="341" /></p>
-		    <p id="centered-text">Área externa com redes</p>
-		    <p id="img-lancha"><img src="img/entrada-estacionamento.jpg" width="560" height="373" /></p>
-		    <p id="centered-text">A área de entrada e estacionamento</p>
-		    <p id="img-lancha"><img src="img/fachada-palmeiras.jpg" width="560" height="373" /></p>
-		    <p id="centered-text">O trabalho artesanal de bambu dá um toque especial ao espaço</p>
+			<div class="simple-images">
+			<div class="images-aligned">
+				
+				<p>
+				<a href="img/casa-salao.jpg" data-lightbox="example-set" title="O salão principal da casa. Clique na parte direita da imagem para continuar."><img src="img/scasa-salao.jpg" alt="Nosso salão: imagem 1 de 8" width="150" height="150"/></a>
+				
+				<a href="img/area-de-tv.jpg" data-lightbox="example-set" title="Área interna com TV e DVD."><img src="img/sarea-de-tv.jpg" alt="Nosso salão: imagem 2 de 8" width="150" height="150"/></a>
+				
+				<a class="example-image-link" href="img/carram.jpg" data-lightbox="example-set" title="Vista do carramanchão com redes."><img class="example-image" src="img/scarram.jpg" alt="Quarto 1: imagem 3 de 8" width="150" height="150"/></a> 
+				
+				<a class="example-image-link" href="img/entrada-estacionamento.jpg" data-lightbox="example-set" title="Área de entrada e estacionamento."><img class="example-image" src="img/sentrada-estacionamento.jpg" alt="Quarto 1: imagem 3 de 8" width="150" height="150"/></a> 
+				</p>
+
+				<p>
+				<a href="img/fachada-palmeiras.jpg" data-lightbox="example-set" title="O salão principal da casa. Clique na parte direita da imagem para continuar."><img src="img/sfachada-palmeiras.jpg" alt="Nosso salão: imagem 1 de 8" width="150" height="150"/></a>
+				
+				
+				</p>
+				
+<!--		    	<p class="img-lancha"><img src="img/fachada-palmeiras.jpg" width="560" height="373" alt="Trabalho em Bambu"/></p>
+		    	<p>O trabalho artesanal de bambu dá um toque especial ao espaço</p> -->
+			
+			</div>
+			</div>
 		</div>
 
 		<footer>
-			<img src="img/foot.jpg" alt="Footer Bambu" width="480" height="100"><img src="img/foot.jpg" alt="Footer Casa de Bambu" width="480" height="100">
+			<img src="img/foot.jpg" alt="Footer Bambu" width="480" height="50"><img src="img/foot.jpg" alt="Footer Casa de Bambu" width="480" height="50">
 			<p>Hospedaria Casa de Bambu - Rua B, Vila D. Pedro I - Paraty - RJ - Brasil </p>
 			<p>fpnsantos@gmail.com - +55 (24) 3371-0365 </p>
 		</footer>

@@ -4,7 +4,7 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
-	<meta charset="UTF-8" content="text/html" />
+	<meta charset="UTF-8" />
   	<meta name="description" content="Hospedagem para casais ou grupos na cidade de Paraty em um ambiente cercado de um jardim com especies da mata atlântica em uma casa feita de Bambu. Somos uma família local e também ajudamos com dicas de passeios e muito mais! Ótimos preços!" />
   	<meta name="keywords" content="paraty, hospedagem, hotel, pousada, barata, casa, bambu, grupos, passeios, local, carnaval, reveillon, passeio, barco" />
 
@@ -13,7 +13,12 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css" />
-    <script>
+	<link href="css/lightbox.css" rel="stylesheet" />
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/lightbox-2.6.min.js"></script>
+    
+	<script>
             var _gaq=[['_setAccount','UA-38332351-1'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src='//www.google-analytics.com/ga.js';
@@ -23,16 +28,17 @@
 <body>
 	<div class="wrap">
 		<header>
-			<img src="img/head.jpg" alt="Header Bambu" width="960" height="100" />
+			<img src="img/head.jpg" alt="Header Bambu" width="960" height="50" />
 			<div class="wifi">
 				<img src="img/wifi.gif" width="60" height="24" alt="Disponibilizamos Internet Wi-Fi" />
 			</div>
 			<div class="opcoes">
 				<ul>
-					<li><a href="index.html">Início</a></li>
-					<li><a href="casa.html">Casa</a></li>
-					<li><a href="quartos.html">Quartos</a></li>
-					<li><a href="contato.html">Contato</a></li>
+					<li><a href="index.html">início</a></li>
+					<li><a href="casa.html">casa</a></li>
+					<li><a href="quartos.html">quartos</a></li>
+					<li><a href="faq.html">faq</a></li>
+					<li><a href="contato.html">contato</a></li>
 				</ul>
 			</div> 
 
@@ -52,59 +58,36 @@
 			<h2>Detalhes dos Quartos</h2>
 
 			<p>São 3 quartos de casal com ventilador de teto, 2 banheiros coletivos com chuveiro quente, um salão com TV e DVD e nossa cozinha, além de nossa hospitalidade.</p>
-
-			<p id="centered-text">Quarto 1</p>
-
+			<p>Clique em uma das miniaturas abaixo para abrir a galeria de fotos.</p>
+			<div class="simple-images">
 			<div class="images-aligned">
+				
 				<p>
-					<img src="img/quarto1.jpg" width="512" height="341"/> <img src="img/detalhe1.jpg" width="320" height="213"/>
-				</p>
-			</div>
-
-			<p id="centered-text">Quarto 2</p>
-
-			<div class="images-aligned">
+				<a href="img/quarto1.jpg" data-lightbox="example-set" title="Quarto 1. Clique na parte direita da imagem para continuar."><img src="img/squarto1.jpg" alt="Quarto 1: imagem 1 de 6" width="150" height="150"/></a> 
+				
+				<a class="example-image-link" href="img/quarto2.jpg" data-lightbox="example-set" title="Quarto 2 com vista para o Jardim"><img class="example-image" src="img/squarto2.jpg" alt="Quarto 2: imagem 2 de 6 thumb" width="150" height="150"/></a>
+				
+				<a class="example-image-link" href="img/quarto3.jpg" data-lightbox="example-set" title="Quarto 3 decorado com quadros de artistas locais"><img class="example-image" src="img/squarto3.jpg" alt="Quarto 3: imagem 3 de 6" width="150" height="150"/></a>
+				
+				<a class="example-image-link" href="img/banheiro.jpg" data-lightbox="example-set" title="Dois banheiros como este estão disponíveis para os hóspedes"><img class="example-image" src="img/sbanheiro.jpg" alt="Banheiro: imagem 4 de 6" width="150" height="150"/></a> </p>
+				
 				<p>
-					<img src="img/detalhe2.jpg" width="320" height="213"/> <img src="img/quarto2.jpg" width="512" height="341"/>
+				<a class="example-image-link" href="img/cafe.jpg" data-lightbox="example-set" title="Nosso café da manhã com frutas locais, paes, frios e iogurte natural."><img class="example-image" src="img/scafe.jpg" alt="Quarto 1: imagem 5 de 6 thumb" width="150" height="150"/></a>
+				
+				<a class="example-image-link" href="img/cozinha.jpg" data-lightbox="example-set" title="Disponibilizamos a cozinha para seu uso"><img class="example-image" src="img/scozinha.jpg" alt="Quarto 1: imagem 6 de 6 thumb" width="150" height="150"/></a> 
+
+				<a class="example-image-link" href="img/jardim.jpg" data-lightbox="example-set" title="Vista externa do jardim"><img class="example-image" src="img/sjardim.jpg" alt="Quarto 1: imagem 6 de 6 thumb" width="150" height="150"/></a> 
+
+				<!-- ><a class="example-image-link" href="img/carram.jpg" data-lightbox="example-set" title="Vista do carramanchão com redes"><img class="example-image" src="img/scarram.jpg" alt="Quarto 1: imagem 6 de 6 thumb" width="150" height="150"/></a>  -->
 				</p>
+
 			</div>
-
-			<p id="centered-text">Quarto 3</p>
-
-			<div class="images-aligned">
-				<p>
-					<img src="img/quarto3.jpg" width="512" height="341"/> <img src="img/detalhe3.jpg" width="320" height="213"/>
-				</p>
-			</div>
-
-			<p id="centered-text">Banheiro</p>
-
-			<div class="images-aligned">
-				<p>
-					<img src="img/detalhe-banheiro.jpg" width="320" height="213"/> <img src="img/banheiro.jpg" width="512" height="341"/>
-				</p>
-			</div>
-
-			<p id="centered-text">Café</p>
-
-			<div class="images-aligned">
-				<p>
-					<img src="img/cafe.jpg" width="512" height="341"/> <img src="img/detalhe-cafe.jpg" width="213" height="320"/>
-				</p>
-			</div>
-
-			<p id="centered-text">Cozinha</p>
-
-			<div class="images-aligned">
-				<p>
-					<img src="img/detalhe-cozinha.jpg" width="320" height="213"/> <img src="img/cozinha.jpg" width="512" height="341"/>
-				</p>
-			</div>
+		</div>
 
 		</div>
 		
 		<footer>
-			<img src="img/foot.jpg" alt="Footer Bambu" width="480" height="100"><img src="img/foot.jpg" alt="Footer Casa de Bambu" width="480" height="100">
+			<img src="img/foot.jpg" alt="Footer Bambu" width="480" height="50"><img src="img/foot.jpg" alt="Footer Casa de Bambu" width="480" height="50">
 			<p>Hospedaria Casa de Bambu - Rua B, Vila D. Pedro I - Paraty - RJ - Brasil </p>
 			<p>fpnsantos@gmail.com - +55 (24) 3371-0365 </p>
 		</footer>
