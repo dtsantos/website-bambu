@@ -162,11 +162,13 @@ class MainPage(webapp2.RequestHandler):
 class Confirmacao(webapp2.RequestHandler):
     def post(self):
     	message = mail.EmailMessage(sender="Davi Trindade <davitrindade@gmail.com>",
-                            subject="Casa de Bambu: "+self.request.get('nome')+", de: "+ self.request.get('dataEntrada') +" a: "+ self.request.get('dataSaida'),
+                            subject="Site Bambu: "+self.request.get('nome')+", de "+ self.request.get('dataEntrada') +" a "+ self.request.get('dataSaida'),
 							to="fpnsantos@gmail.com",reply_to=" "+self.request.get('nome')+" <"+self.request.get('email')+">",
                             body="Remetente: "+self.request.get('nome')+
-							"\nDatas: "+ self.request.get('dataEntrada') +" a: "+ self.request.get('dataSaida') + 
-							"\nTelefone: "+self.request.get('tel')+"\nEmail: "+self.request.get('email')+"\nMensagem: \n"+self.request.get('msg'))
+							"\nPeriodo: "+ self.request.get('dataEntrada') +" a "+ self.request.get('dataSaida') + 
+							"\nHospedes: "+self.request.get('hospedes')+
+							"\nCriancas: "+self.request.get('criancas')+
+							"\nEmail: "+self.request.get('email')+"\nMensagem: \n"+self.request.get('msg'))
 	message.send()
 	
 	self.response.out.write("""
